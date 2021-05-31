@@ -1,0 +1,21 @@
+Package: lungr
+Type: Package
+Title: Lung-related prediction equations (Knudson, Wang)    
+Version: 0.1.0
+Authors@R: person("Alex", "Paynter", email = "alexcpaynter@gmail.com",
+    role = c("aut", "cre"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: An implementation of some some older spirometry prediction papers (Knudson, 1983) (Wang, 1993).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    magrittr,
+    rlang,
+    dplyr,
+    tibble
+Depends:
+    R (>= 2.10)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat
