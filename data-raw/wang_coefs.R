@@ -355,6 +355,11 @@ wang_coefs <- dplyr::bind_rows(
 
 
 
+usethis::use_data(wang_coefs, overwrite = TRUE)
+
+
+
+
 
 # A few diagnostics I used to check my data.  Uncomment these if desired, or
 #   if some changes are needed to the data.
@@ -375,10 +380,3 @@ wang_coefs %>%
 # looking at the coefficients and double checking for little ones:
 wang_coefs %>% dplyr::select(measure, age_lb, alpha, beta) %>%
     View(.)
-
-
-
-
-
-
-# usethis::use_data(wang_coefs, overwrite = TRUE)
