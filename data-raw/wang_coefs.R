@@ -363,20 +363,20 @@ usethis::use_data(wang_coefs, overwrite = TRUE)
 
 # A few diagnostics I used to check my data.  Uncomment these if desired, or
 #   if some changes are needed to the data.
-# plot discover big mistakes:
-library(ggplot2)
-library(tidyr)
-wang_coefs %>%
-    dplyr::mutate(sr = paste0(sex, race)) %>%
-    tidyr::pivot_longer(cols = c('alpha', 'beta'),
-                        names_to = 'coef',
-                        values_to = 'value') %>%
-    ggplot(data = ., aes(x = age_lb, y = value, color = coef)) +
-    geom_line() +
-    scale_color_viridis_d(option = "magma", begin = 0.3, end = 0.7) +
-    scale_x_continuous(breaks = seq(6,18,by= 2)) +
-    facet_grid(rows = vars(measure), cols = vars(sr))
+# plot, to discover big mistakes:
+# library(ggplot2)
+# library(tidyr)
+# wang_coefs %>%
+#     dplyr::mutate(sr = paste0(sex, race)) %>%
+#     tidyr::pivot_longer(cols = c('alpha', 'beta'),
+#                         names_to = 'coef',
+#                         values_to = 'value') %>%
+#     ggplot(data = ., aes(x = age_lb, y = value, color = coef)) +
+#     geom_line() +
+#     scale_color_viridis_d(option = "magma", begin = 0.3, end = 0.7) +
+#     scale_x_continuous(breaks = seq(6,18,by= 2)) +
+#     facet_grid(rows = vars(measure), cols = vars(sr))
 
 # looking at the coefficients and double checking for little ones:
-wang_coefs %>% dplyr::select(measure, age_lb, alpha, beta) %>%
-    View(.)
+# wang_coefs %>% dplyr::select(measure, age_lb, alpha, beta) %>%
+#     View(.)
