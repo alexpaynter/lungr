@@ -83,7 +83,7 @@ wang_coefs_wm <- tibble::tribble(
 wang_coefs_wm <- wang_coefs_wm %>%
     dplyr::mutate(
         race = "white",
-        sex = "male",
+        sex = "m",
         age_lb = rep(6:18, times = 4),
         measure = rep(c('fvc', 'fev', 'fev_fvc', 'fef2575'), each = 13)
     ) %>%
@@ -169,7 +169,7 @@ wang_coefs_wf <- tibble::tribble(
 wang_coefs_wf <- wang_coefs_wf %>%
     dplyr::mutate(
         race = "white",
-        sex = "female",
+        sex = "f",
         age_lb = rep(6:18, times = 4),
         measure = rep(c('fvc', 'fev', 'fev_fvc', 'fef2575'), each = 13)
     ) %>%
@@ -254,7 +254,7 @@ wang_coefs_bm <- tibble::tribble(
 wang_coefs_bm <- wang_coefs_bm %>%
     dplyr::mutate(
         race = "black",
-        sex = "male",
+        sex = "m",
         age_lb = rep(6:18, times = 4),
         measure = rep(c('fvc', 'fev', 'fev_fvc', 'fef2575'), each = 13)
     ) %>%
@@ -338,7 +338,7 @@ wang_coefs_bf <- tibble::tribble(
 wang_coefs_bf <- wang_coefs_bf %>%
     dplyr::mutate(
         race = "black",
-        sex = "female",
+        sex = "f",
         age_lb = rep(6:18, times = 4),
         measure = rep(c('fvc', 'fev', 'fev_fvc', 'fef2575'), each = 13)
     ) %>%

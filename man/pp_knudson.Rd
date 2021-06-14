@@ -2,7 +2,7 @@
 % Please edit documentation in R/knudson.R
 \name{pp_knudson}
 \alias{pp_knudson}
-\title{Percent predicted spirometry based on Knudson (1983)}
+\title{Percentage of predicted based on Knudson (1983) spirometric equations.}
 \usage{
 pp_knudson(
   sex,

@@ -1,4 +1,4 @@
 library(testthat)
-library(spirometry)
+library(lungr)
 
-test_check("spirometry")
+test_check("lungr")
